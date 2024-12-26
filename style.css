@@ -84,6 +84,7 @@ article {
     height: 100%;
     line-height: 100%;
     opacity: 1;
+    visibility: visible;
 }
 #red-error {
     width: 100%;
