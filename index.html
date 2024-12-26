@@ -1,4 +1,4 @@
-<!DOCOTYPE html>
+<!DOCTYPE html>
 <html>
 
   <head>
@@ -15,92 +15,174 @@
 
   <body>
 
-    <!-- Logo and App Name -->
-    <header>
-        <div id="logo-container" class = "header">
-          <img src='images/gold-movie-logo.jpeg'/>
-          <h1 id = "business-name" >Budget Planner</h1>
-        </div>
-    </header>
-
-    <!-- Navigation Bar -->
-    <nav id="navigation-bar" class=sticky> 
-        <div>
-         <ul id = "nav-links">
-            <li><a href="../a4/index.php">Home</a></li>
-            <li><a href="../a4/#info">About Us</a></li>
-            <li><a href="../a4/#seat-prices">Seats</a></li>
-            <li><a href="../a4/#movie-posters">Now Showing</a></li>
-            <li><a onclick = "alertNoMovie() " href="../a4/booking.php">Booking</a></li>
-          </ul>
-        </div>
-    </nav>
-
     <!-- App -->
     <main>
-      
-        <!-- 1. Earnings  -->
-        <section id="info">
-            <title>About Us</title>
-            <h1 id="section-header"> ABOUT US </h1>
-            <div id= "about-us">
-  
-                We are happy to announce the completion of our extensive renovations, with the introduction of new reclinable first class seats that provides 
-                a superior experience for those who are not satisfied with the standard seats.
-                Checkout out the newly installed 3D DOLBY VISION projection and DOLBY ATMOS sound. For more information click
+        <!-- Flex Box -->
+        <section class="split-screen">
 
-                <a id= "dolby" href= "https://www.dolby.com/us/en/cinema"> here </a>
-  
-            </div>
-  
-        </section>
-  
-        <hr>
+            <!-- Results Box -->
+            <article class="article">
+                
+                <!-- Logo and App Name -->
+                <div id="logo-container">
+                    <!--Free Image from-->
+                    <!--https://icons8.com/icon/41LOFTWPsRas/calculator-->
+                    <img id="logo" src='images/apple-calculator-Logo.png'/>
+                    <div id = "business-name">
+                        <h1>BUDGET PLANNER</h1>
+                    </div>
+                </div>
+                  
+                <!-- Current Month -->
+                <div>
+                    <h2 id="month">December 2024</h2>
+                </div>
 
-        <!-- 2. Expenses  -->
-        <section id="info">
-            <title>About Us</title>
-            <h1 id="section-header"> ABOUT US </h1>
-            <div id= "about-us">
-  
-                We are happy to announce the completion of our extensive renovations, with the introduction of new reclinable first class seats that provides 
-                a superior experience for those who are not satisfied with the standard seats.
-                Checkout out the newly installed 3D DOLBY VISION projection and DOLBY ATMOS sound. For more information click
+                <!-- Result Display -->
+                <div id="result-display">
+                    <!--Result img-->
+                    <div id="result-img">
+                        <!--Free Image from-->
+                        <!--<a href="https://www.flaticon.com/free-icons/done" title="done icons">Done icons created by Tama Icons. - Flaticon</a>-->
+                        <img id="green-check" src='images/green-check-box.png'/>
 
-                <a id= "dolby" href= "https://www.dolby.com/us/en/cinema"> here </a>
-  
-            </div>
-  
-        </section>
-  
-        <hr>
+                        <!--Free Image from-->
+                        <!--https://www.freeiconspng.com/img/4599#google_vignette-->
+                        <img id="red-error" src='images/red-error-box.png'/>  
+                    </div>
+
+                    <!--Final Result-->
+                    <div id="final-result">
+                       <h3 id="net-position">Net Position</h3>
+                       <h2 id="final-position">$5000.00</h3>  
+                    </div>
+                </div>
+                
+                <!-- Totals Display -->
+                <div id="totals-display">
+                    <!--total earnings-->  
+                    <div id="total-earnings">
+                        <label for="earnings" class="label">Total Earnings</label>
+                        <textarea name="earnings" id="earnings">+     $5000.00</textarea>
+                    </div>
+                    <!--total Expenses-->
+                    <div id="total-expenses">
+                        <label for="earnings" class="label">Total Expenses</label>
+                        <textarea name="expenses" id="expenses">-     $00.00</textarea>
+                    </div>
+                </div>
+
+                <br>
+                <hr>
+                <br>
+
+                <!-- Averages Display -->
+                <div class="panel" id="averages-display">
+                    <h1 class="panel-heading" id="averages-heading">Expenses Average By Category</h1>
+                    <!--Transport Average-->  
+                    <div class="average" id="transport">
+                        <div id="transport-average">Transport ............ $00.00</div>
+                    </div>
+                    <!--Household Average-->  
+                    <div class="average" id="household">
+                        <div id="household-average">Household .......... $00.00</div>
+                    </div>
+                    <!--Personal Average-->  
+                    <div class="average" id="personal">
+                        <div id="personal-average">Personal .............. $00.00</div>
+                    </div>
+                </div> 
+            </article>
+
+            <!-- Input Box -->
+            <div class="input-box">
+
+                <!--Input Panels-->
+                <div id="input-panels">
+
+                    <!--Earnings Form-->
+                    <form method="POST" class="input-form" id="earnings-form">
+                        <!--Earnings Input-->
+                        <h1 class="input-panel-heading" id="earnings-form-heading">Earnings</h1>
+
+                        <label for="earnings-input" class="item-label">Please enter your earnings</label><br><br>
+                        <input type="text" name="earnings-input" id="earnings-input" placeholder="Earnings"><br><br><br>
+                        
+                        <!--Form Submit Button-->
+                        <button type="button" class="form-button">Set Earnings</button>
+                    </form>
+
+                    <!--Expenses Form-->
+                    <form method="POST" class="input-form" id="expenses-form">
+                        <!--Expenses Input-->
+                        <h1 class="input-panel-heading" id="expenses-form-heading">Expenses</h1>
+
+                        <!--Transport-->
+                        <h3 class="category-heading" id="transport-heading">Transport:</h3>
+
+                        <label for="petrol-input" class="item-label">Petrol: .............</label>
+                        <input type="text" class="input-field" name="petrol-input" id="petrol-input" placeholder="Petrol Expenses"><br>
+                        <label for="service-input" class="item-label">Car Service: .....</label>
+                        <input type="text" class="input-field" name="service-input" id="service-input" placeholder="Car Maintenance Expenses"><br>
+                        <label for="repayments-input" class="item-label">Repayments: ...</label>
+                        <input type="text"class="input-field" name="repayments-input" id="repayments-input" placeholder="Car Repayments Expenses"><br>
+
+                        <!--Household-->
+                        <h3 class="category-heading" id="household-heading">Household:</h3>
+
+                        <label for="mortgage-input" class="item-label">Mortgage: .......</label>
+                        <input type="text" class="input-field" name="mortgage-input" id="mortgage-input" placeholder="Mortgage Expenses"><br>
+                        <label for="electricity-input" class="item-label">Electricity: ......</label>
+                        <input type="text" class="input-field" name="electircity-input" id="electricity-input" placeholder="Electricity Expenses"><br>
+                        <label for="groceries-input" class="item-label">Groceries: .......</label>
+                        <input type="text" class="input-field" name="groceries-input" id="groceries-input" placeholder="Groceries Expenses"><br>
+
+                        <!--Personal-->
+                        <h3 class="category-heading" id="household-heading">Personal:</h3>
+
+                        <label for="clothes-input" class="item-label">Clothes: ...........</label>
+                        <input type="text" class="input-field" name="clothes-input" id="clothes-input" placeholder="Clothes' Expenses"><br>
+                        <label for="gym-input" class="item-label">Gym/Sports: ....</label>
+                        <input type="text" class="input-field" name="gym-input" id="gym-input" placeholder="Gym Expenses"><br>
+                        <label for="entertainment-input" class="item-label">Entertainment: </label>
+                        <input type="text" class="input-field" name="entertainment-input" id="entertainment-input" placeholder="Entertainment Expenses"><br>
+
+                        <br>
     
-        <!-- 3. Results  -->
-        <section id="info">
-            <title>About Us</title>
-            <h1 id="section-header"> ABOUT US </h1>
-            <div id= "about-us">
-  
-                We are happy to announce the completion of our extensive renovations, with the introduction of new reclinable first class seats that provides 
-                a superior experience for those who are not satisfied with the standard seats.
-                Checkout out the newly installed 3D DOLBY VISION projection and DOLBY ATMOS sound. For more information click
+                        <!--Form Submit Button-->
+                        <button type="button" class="form-button">Calculate</button>
+                    </form>
 
-                <a id= "dolby" href= "https://www.dolby.com/us/en/cinema"> here </a>
-  
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+                <!--Expenses Summary Panel-->
+                <div id="summary-panel">
+                    <!--Expenses Summary-->
+                    <h1 class="input-panel-heading" id="expenses-summary-heading">Expenses Summary</h1>
+                    <!--Transport Total-->  
+                    <div class="totals" id="transport">
+                        <div id="transport-total">Transport ............ $00.00</div>
+                    </div>
+                    <!--Household Average-->  
+                    <div class="totals" id="household">
+                        <div id="household-total">Household .......... $00.00</div>
+                    </div>
+                    <!--Personal Average-->  
+                    <div class="totals" id="personal">
+                        <div id="personal-total">Personal .............. $00.00</div>
+                    </div>
+                </div>
+
             </div>
-  
+
         </section>
-  
-        <hr>
-        
+
     </main>
-
-    <hr>
-
-    <footer>
-      <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
-    </footer>
-
+    
   </body>
-  
+
 </html>

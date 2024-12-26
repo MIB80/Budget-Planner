@@ -1,0 +1,306 @@
+/* **************************************** General Styling ******************************************* */
+
+/* **Body** */
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+    font-family: Georgia, 'Segoe UI';
+    font-size: 1vw;
+}
+
+/* **Split screen** */
+main {
+    margin: 0px;
+    padding: 0px;
+}
+.split-screen {
+    margin: auto;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+/* **Results Area** */
+
+article {
+    margin: 0px;
+    padding: 20px;
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    background-color: #a9dbff;
+}
+#logo-container {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0px;
+    text-align: center;
+    align-items: center;
+    vertical-align: bottom;
+    width: 100%;
+    height: 10%;
+}
+#logo {
+    width: 10%;
+    height: 100%;
+    line-height: 100%;
+    padding-left: 15%;
+    opacity: 1;
+}
+#business-name {
+    width: 80%;
+    height: 100%;
+    line-height: 100%;
+    margin-top: 0px;
+    padding-left: 20px;
+    font: Georgia;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+}
+#month {
+    width: 100%;
+    padding-left: 15%;
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: left;
+}
+#result-display {
+    width: 100%;
+    height: 30vh;
+    line-height: 100%;
+    opacity: 1;
+}
+#result-img {
+    width: 30%;
+    height: 100%;
+    padding-left: 15%;
+    opacity: 1;
+}
+#green-check {
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+    opacity: 1;
+}
+#red-error {
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+    opacity: 1;
+    visibility: hidden;
+}
+#final-result {
+    width: 30%;
+    height: 100%;
+    line-height: 100%;
+    opacity: 1;
+}
+#net-position {
+    padding-top: 25%;
+    font-family: Georgia;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+}
+#final-position {
+    font-family: Georgia;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+}
+#totals-display {
+    width: 100%;
+    height: 30%;
+    padding-left: 15%;
+    line-height: 100%;
+    align-items: center;
+    opacity: 1;
+}
+#total-earnings {
+    width: 60%;
+    height: 50%;
+    line-height: 100%;
+    opacity: 1;
+}
+.label {
+    float: left;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    pointer-events:none;
+    color: #000000;
+  }
+#earnings {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgb(69, 139, 69);
+    border-radius: 15px;
+}
+#total-expenses {
+    width: 60%;
+    height: 50%;
+    line-height: 100%;
+    opacity: 1;
+}
+#expenses {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgb(146, 73, 73);
+    border-radius: 15px;
+}
+#averages-display {
+    width: 95%;
+    height: 30%;
+    margin: auto;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    line-height: 100%;
+    align-items: center;
+    text-align: center;
+    text-justify:distribute-all-lines;
+    font-family: Georgia;
+    opacity: 1;
+    background-color: #8ca5bd;
+    border-radius: 15px;
+}
+.panel-heading {
+    width: 50%;
+    height: 50%;
+    padding: 5px;
+    color: #ffffff;
+    align-self: center;
+    margin-left: 25%;
+    background-color: #546474;
+    border-radius: 15px;
+}
+
+/* **Input Area** */
+
+.input-box {
+    margin: 0px;
+    padding: 0px;
+    width: 50%;
+    /* Free Image from https://unsplash.com/photos/person-using-phone-and-laptop-computer-EMPZ7yRZoGw?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash */
+    background-image: url(images/background_img1.jpg);
+    line-height: 100%; /* To give input area the same height as the result area area */
+}
+#input-panels {
+    width: 100%;
+    height: 73%;
+    padding: 2%;
+    margin-top: 0px;
+    margin-left: 0px;
+    position: relative;
+
+}
+.input-panel-heading {
+    width: fit-content;
+    height: fit-content;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    color: #ffffff;
+    text-align:center;
+    font-family: Georgia;
+    font-size: 16px;
+    margin-left: 25%;
+    background-color: #546474;
+    border-radius: 15px;
+}
+.input-form {
+    background-color: #8ca5bd;
+    border-radius: 15px;
+    padding: 2%;
+    text-align:right;
+}
+.category-heading {
+    text-align: left;
+}
+#earnings-form {
+    margin-left: 2%;
+    height: fit-content;
+}
+#expenses-form {
+    margin-left: 5%;
+    padding-bottom: 1%;
+    width: 50%;
+}
+#expenses-form-heading {
+    margin-left: 35%;
+}
+.item-label {
+    font-weight: bold;
+}
+.input-field {
+    margin-right: 0px;
+    padding: 5px;
+}
+#summary-panel {
+    width: 90%;
+    margin:auto;
+    align-items: center;
+    text-align: center;
+    text-justify:distribute-all-lines;
+    background-color: #8ca5bd;
+    border-radius: 15px;
+    padding: 1%;
+}
+#expenses-summary-heading {
+    margin-left: 35%;
+}
+.form-button {
+    background-color: #a9dbff;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 5px #546474;
+}
+.form-button:hover {
+    background-color: #000000;
+    color: #a9dbff;
+    border-radius: 15px;
+}
+.form-button:active {
+    box-shadow: 0 1px #546474;
+    transform: translateY(4px);
+}
+
+
+/* ************************************************************** */
+
+/* *****Layout Styling***** */
+  
+/* **Split Screen Layout (Flexbox)** */
+.split-screen {
+    display: flex;
+}
+/* Flex Properties for the split screen layout */
+.article {
+    flex: 1 1 50%;
+}
+#logo-container {
+    display: flex;
+}
+#result-display {
+    display: flex;
+}
+.input-box {
+    flex: 1 1 50%;
+}
+#input-panels {
+    display: inline-flex;
+}
