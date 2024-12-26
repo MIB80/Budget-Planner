@@ -9,7 +9,7 @@
     
     
     <link rel="stylesheet" href="style.css"/>
-    <script src='script.js'></script>
+    <script src='main.js'></script>
 
   </head>
 
@@ -54,7 +54,7 @@
                     <!--Final Result-->
                     <div id="final-result">
                        <h3 id="net-position">Net Position</h3>
-                       <h2 id="final-position">$5000.00</h3>  
+                       <h2 id="final-position">$00.00</h3>  
                     </div>
                 </div>
                 
@@ -63,7 +63,7 @@
                     <!--total earnings-->  
                     <div id="total-earnings">
                         <label for="earnings" class="label">Total Earnings</label>
-                        <textarea name="earnings" id="earnings">+     $5000.00</textarea>
+                        <textarea name="earnings" id="earnings">+     $00.00</textarea>
                     </div>
                     <!--total Expenses-->
                     <div id="total-expenses">
@@ -105,11 +105,11 @@
                         <!--Earnings Input-->
                         <h1 class="input-panel-heading" id="earnings-form-heading">Earnings</h1>
 
-                        <label for="earnings-input" class="item-label">Please enter your earnings</label><br><br>
-                        <input type="text" name="earnings-input" id="earnings-input" placeholder="Earnings"><br><br><br>
+                        <label for="earnings-input" class="item-label">Please enter your earnings $</label><br><br>
+                        <input type="text" name="earnings-input" id="earnings-input" placeholder="Earnings" required><br><br><br>
                         
                         <!--Form Submit Button-->
-                        <button type="button" class="form-button">Set Earnings</button>
+                        <button type="button" class="form-button" id="set-earnings-btn">Set Earnings</button>
                     </form>
 
                     <!--Expenses Form-->
@@ -120,37 +120,37 @@
                         <!--Transport-->
                         <h3 class="category-heading" id="transport-heading">Transport:</h3>
 
-                        <label for="petrol-input" class="item-label">Petrol: .............</label>
-                        <input type="text" class="input-field" name="petrol-input" id="petrol-input" placeholder="Petrol Expenses"><br>
-                        <label for="service-input" class="item-label">Car Service: .....</label>
-                        <input type="text" class="input-field" name="service-input" id="service-input" placeholder="Car Maintenance Expenses"><br>
-                        <label for="repayments-input" class="item-label">Repayments: ...</label>
-                        <input type="text"class="input-field" name="repayments-input" id="repayments-input" placeholder="Car Repayments Expenses"><br>
+                        <label for="petrol-input" class="item-label">Petrol: ............$</label>
+                        <input type="text" class="input-field" name="petrol-input" id="petrol-input" placeholder="Petrol Expenses" required><br>
+                        <label for="service-input" class="item-label">Car Service: ....$</label>
+                        <input type="text" class="input-field" name="service-input" id="service-input" placeholder="Car Maintenance Expenses" required><br>
+                        <label for="repayments-input" class="item-label">Repayments: ..$</label>
+                        <input type="text"class="input-field" name="repayments-input" id="repayments-input" placeholder="Car Repayments Expenses" required><br>
 
                         <!--Household-->
                         <h3 class="category-heading" id="household-heading">Household:</h3>
 
-                        <label for="mortgage-input" class="item-label">Mortgage: .......</label>
-                        <input type="text" class="input-field" name="mortgage-input" id="mortgage-input" placeholder="Mortgage Expenses"><br>
-                        <label for="electricity-input" class="item-label">Electricity: ......</label>
-                        <input type="text" class="input-field" name="electircity-input" id="electricity-input" placeholder="Electricity Expenses"><br>
-                        <label for="groceries-input" class="item-label">Groceries: .......</label>
-                        <input type="text" class="input-field" name="groceries-input" id="groceries-input" placeholder="Groceries Expenses"><br>
+                        <label for="mortgage-input" class="item-label">Mortgage: ......$</label>
+                        <input type="text" class="input-field" name="mortgage-input" id="mortgage-input" placeholder="Mortgage Expenses" required><br>
+                        <label for="electricity-input" class="item-label">Electricity: .....$</label>
+                        <input type="text" class="input-field" name="electircity-input" id="electricity-input" placeholder="Electricity Expenses" required><br>
+                        <label for="groceries-input" class="item-label">Groceries: ......$</label>
+                        <input type="text" class="input-field" name="groceries-input" id="groceries-input" placeholder="Groceries Expenses" required><br>
 
                         <!--Personal-->
                         <h3 class="category-heading" id="household-heading">Personal:</h3>
 
-                        <label for="clothes-input" class="item-label">Clothes: ...........</label>
-                        <input type="text" class="input-field" name="clothes-input" id="clothes-input" placeholder="Clothes' Expenses"><br>
-                        <label for="gym-input" class="item-label">Gym/Sports: ....</label>
-                        <input type="text" class="input-field" name="gym-input" id="gym-input" placeholder="Gym Expenses"><br>
-                        <label for="entertainment-input" class="item-label">Entertainment: </label>
-                        <input type="text" class="input-field" name="entertainment-input" id="entertainment-input" placeholder="Entertainment Expenses"><br>
+                        <label for="clothes-input" class="item-label">Clothes: ..........$</label>
+                        <input type="text" class="input-field" name="clothes-input" id="clothes-input" placeholder="Clothes' Expenses" required><br>
+                        <label for="gym-input" class="item-label">Gym/Sports: ...$</label>
+                        <input type="text" class="input-field" name="gym-input" id="gym-input" placeholder="Gym Expenses" required><br>
+                        <label for="entertainment-input" class="item-label">Entertainment:$</label>
+                        <input type="text" class="input-field" name="entertainment-input" id="entertainment-input" placeholder="Entertainment Expenses" required><br>
 
                         <br>
     
                         <!--Form Submit Button-->
-                        <button type="button" class="form-button">Calculate</button>
+                        <button type="button" class="form-button" id="calculate-btn">Calculate</button>
                     </form>
 
                 </div>
